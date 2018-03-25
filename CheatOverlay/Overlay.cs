@@ -96,5 +96,43 @@ namespace CheatOverlay
             g = e.Graphics;
             g.DrawRectangle(myPen, 100, 100, 200, 200);
         }
+
+        //public static BitmapSource CaptureScreen(Visual target, double width, double height, double dpiX, double dpiY)
+        //{
+
+        //    if (target == null)
+        //    {
+        //        return null;
+        //    }
+
+        //    // get the actual size
+        //    Rect bounds = VisualTreeHelper.GetDescendantBounds(target);
+        //    RenderTargetBitmap rtb = new RenderTargetBitmap((int)(width * dpiX / 96.0),
+        //                                                    (int)(height * dpiY / 96.0), dpiX, dpiY,
+        //                                                    PixelFormats.Pbgra32);
+
+        //    DrawingVisual dv = new DrawingVisual();
+        //    using (DrawingContext ctx = dv.RenderOpen())
+        //    {
+        //        VisualBrush vb = new VisualBrush(target);
+        //        ctx.DrawRectangle(vb, null, new Rect(new System.Windows.Point(), bounds.Size));
+        //    }
+
+        //    rtb.Render(dv);
+        //    return rtb;
+        //}
+
+        //private void BtnClick(object sender, RoutedEventArgs e)
+        //{
+        //    BitmapSource image = Window1.CaptureScreen(this, this.ActualWidth, this.ActualHeight, 96.0, 96.0);
+        //    PngBitmapEncoder encoder = new PngBitmapEncoder();
+        //    encoder.Frames.Add(BitmapFrame.Create(image));
+
+        //    FileStream strm = new FileStream(@"C:\ScreenshotBitmap.png", FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+
+        //    encoder.Save(strm);
+
+        //    strm.Close();
+        //}
     }
 }
